@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{249038BF-7CB1-4A39-BC4C-C70E62BD44F7}</ProjectGuid>
+    <RootNamespace>Tics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <RunCodeAnalysis>false</RunCodeAnalysis>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(OPENCV_DIR)\include;$(BOOST_DIR);$(FLANDMARK_DIR)\include;$(DISLIN)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINVER=0x0400;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE</PreprocessorDefinitions>
+      <EnablePREfast>false</EnablePREfast>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(OPENCV_DIR)\lib;$(BOOST_DIR)\stage\lib;$(FLANDMARK_DIR)\lib;$(DISLIN)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core246.lib;opencv_highgui246.lib;opencv_imgproc246.lib;opencv_video246.lib;opencv_objdetect246.lib;opencv_ml246.lib;opencv_features2d246.lib;opencv_calib3d246.lib;opencv_legacy246.lib;flandmark.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <PerUserRedirection />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BlinkDetection.cpp" />
+    <ClCompile Include="BlinkFeature.cpp" />
+    <ClCompile Include="CascadeDetection.cpp" />
+    <ClCompile Include="DataLoader.cpp" />
+    <ClCompile Include="Detection.cpp" />
+    <ClCompile Include="DistanceFeature.cpp" />
+    <ClCompile Include="FaceDetection.cpp" />
+    <ClCompile Include="FaceTracker.cpp" />
+    <ClCompile Include="Feature.cpp" />
+    <ClCompile Include="FeatureExtractor.cpp" />
+    <ClCompile Include="FeatureParams.cpp" />
+    <ClCompile Include="findEyeCenter.cpp" />
+    <ClCompile Include="findEyeCorner.cpp" />
+    <ClCompile Include="helpers.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MotionDetection.cpp" />
+    <ClCompile Include="MotionFeature.cpp" />
+    <ClCompile Include="PupilDetection.cpp" />
+    <ClCompile Include="PupilFeature.cpp" />
+    <ClCompile Include="SampleProcessor.cpp" />
+    <ClCompile Include="Tracker.cpp" />
+    <ClCompile Include="WrinkleDetection.cpp" />
+    <ClCompile Include="WrinkleFeature.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BlinkData.h" />
+    <ClInclude Include="BlinkDetection.h" />
+    <ClInclude Include="BlinkFeature.h" />
+    <ClInclude Include="CascadeDetection.h" />
+    <ClInclude Include="constants.h" />
+    <ClInclude Include="DataLoader.h" />
+    <ClInclude Include="Detection.h" />
+    <ClInclude Include="DistanceData.h" />
+    <ClInclude Include="DistanceFeature.h" />
+    <ClInclude Include="FaceDetection.h" />
+    <ClInclude Include="FaceTracker.h" />
+    <ClInclude Include="Feature.h" />
+    <ClInclude Include="FeatureExtractor.h" />
+    <ClInclude Include="findEyeCenter.h" />
+    <ClInclude Include="findEyeCorner.h" />
+    <ClInclude Include="helpers.h" />
+    <ClInclude Include="Eye.h" />
+    <ClInclude Include="Label.h" />
+    <ClInclude Include="MotionDetection.h" />
+    <ClInclude Include="MotionFeature.h" />
+    <ClInclude Include="PupilDetection.h" />
+    <ClInclude Include="PupilFeature.h" />
+    <ClInclude Include="SampleProcessor.h" />
+    <ClInclude Include="SlidingWindow.h" />
+    <ClInclude Include="PupilData.h" />
+    <ClInclude Include="Tracker.h" />
+    <ClInclude Include="WrinkleData.h" />
+    <ClInclude Include="WrinkleDetection.h" />
+    <ClInclude Include="WrinkleFeature.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

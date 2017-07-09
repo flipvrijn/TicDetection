@@ -1,0 +1,195 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Features">
+      <UniqueIdentifier>{dbd4468b-4369-4257-8d45-ba99624da67b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Features">
+      <UniqueIdentifier>{0d06fd08-2557-4270-b222-0463034e8f0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Detectors">
+      <UniqueIdentifier>{719d12dc-22af-4349-8def-1d130dc4ea4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Detectors">
+      <UniqueIdentifier>{e31876e9-7d78-461d-8a22-fb36aa639026}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Misc">
+      <UniqueIdentifier>{b0771a58-619c-490b-ad0f-36660eb11a28}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Misc">
+      <UniqueIdentifier>{6e375bc0-cbb9-4c29-b7fa-0ab26d61e5cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Feature.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureExtractor.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="PupilFeature.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="findEyeCenter.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="findEyeCorner.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="helpers.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceDetection.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="PupilDetection.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="Detection.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="FaceTracker.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="Tracker.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="CascadeDetection.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="DistanceFeature.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="DataLoader.cpp">
+      <Filter>Source Files\Misc</Filter>
+    </ClCompile>
+    <ClCompile Include="WrinkleDetection.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="WrinkleFeature.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionDetection.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="MotionFeature.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="SampleProcessor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BlinkDetection.cpp">
+      <Filter>Source Files\Detectors</Filter>
+    </ClCompile>
+    <ClCompile Include="FeatureParams.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="BlinkFeature.cpp">
+      <Filter>Source Files\Features</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Feature.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="FeatureExtractor.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="findEyeCenter.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="findEyeCorner.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="constants.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="helpers.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceDetection.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="Eye.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="PupilFeature.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="PupilDetection.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="PupilData.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Detection.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="FaceTracker.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="Tracker.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="CascadeDetection.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="SlidingWindow.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceFeature.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="DistanceData.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="Label.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="DataLoader.h">
+      <Filter>Header Files\Misc</Filter>
+    </ClInclude>
+    <ClInclude Include="WrinkleDetection.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="WrinkleData.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="WrinkleFeature.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionDetection.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionFeature.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleProcessor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkDetection.h">
+      <Filter>Header Files\Detectors</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkFeature.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="BlinkData.h">
+      <Filter>Header Files\Features</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
